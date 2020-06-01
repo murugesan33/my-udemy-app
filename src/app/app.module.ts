@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { AssignthreeComponent } from './assignthree/assignthree.component';
 
 
 
@@ -11,10 +14,13 @@ import { SuccessComponent } from './success/success.component';
   declarations: [
     AppComponent,
     WarningComponent,
-    SuccessComponent
+    SuccessComponent,
+    DatabindingComponent,
+    AssignthreeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
